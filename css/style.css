@@ -7,7 +7,7 @@
 
 :root {
   --white: #FFFFFF;
-  --ivory: #FFFFFF;
+  --ivory: #F4F6F8;
   --gray-light: #EAF1F5;
   --gray-mid: #E4E5E7;
   --ink: #242021;
@@ -313,7 +313,7 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 960px) { .teaser-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .teaser-grid { grid-template-columns: 1fr; } }
 .teaser-card {
-  background: var(--ivory);
+  background: var(--white);
   border: 1px solid var(--line-on-light);
   border-radius: var(--radius);
   padding: 2.2rem 1.8rem;
@@ -374,7 +374,7 @@ p:last-child { margin-bottom: 0; }
 .detail-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.8rem; }
 @media (max-width: 860px) { .detail-grid { grid-template-columns: 1fr; } }
 .detail-block {
-  background: var(--ivory);
+  background: var(--white);
   border: 3px solid rgba(243,155,62,0.55);
   border-radius: var(--radius);
   padding: 2.4rem;
@@ -519,7 +519,7 @@ p:last-child { margin-bottom: 0; }
 
 /* Documentation cards */
 .doc-card {
-  background: var(--ivory);
+  background: var(--white);
   border: 1px solid var(--line-on-light);
   padding: 2.4rem;
   border-radius: var(--radius);
@@ -531,7 +531,7 @@ p:last-child { margin-bottom: 0; }
 .value-card {
   position: relative;
   overflow: hidden;
-  background: var(--ivory);
+  background: var(--white);
   border: 1px solid rgba(243,155,62,0.35);
   border-radius: var(--radius);
   padding: 2.4rem 2.2rem;
@@ -656,7 +656,7 @@ p:last-child { margin-bottom: 0; }
   align-items: center;
   text-align: center;
   gap: 0.5em;
-  background: var(--ivory);
+  background: var(--white);
   border: 1px solid rgba(243,155,62,0.35);
   border-radius: var(--radius);
   padding: 2.4rem 1.8rem;
@@ -1151,7 +1151,7 @@ a.contact-info-value:hover { color: var(--indigo-deep); }
 .form-field input,
 .form-field select,
 .form-field textarea {
-  background: var(--ivory);
+  background: var(--white);
   border: 1px solid var(--line-on-light);
   color: var(--text-dark);
   padding: 0.85em 1.1em;
@@ -1342,7 +1342,7 @@ body.nav-open { overflow: hidden; }
 
 /* ---------- Diligence box (Why It Matters to Us) ---------- */
 .diligence-box {
-  background: var(--ivory);
+  background: var(--white);
   border: 2px solid var(--indigo);
   border-radius: var(--radius);
   padding: clamp(1.8rem, 4vw, 3rem);
@@ -1523,7 +1523,7 @@ body.nav-open { overflow: hidden; }
   left: 7.63%; right: 5.16%;
   top: 59%;
   bottom: auto;
-  background: var(--ivory);
+  background: var(--white);
   border-radius: 18px;
   padding: 30px 35px 35px;
   box-shadow: 0 4px 30px rgba(0,0,0,0.06);
@@ -1601,7 +1601,7 @@ body.nav-open { overflow: hidden; }
 /* ---------- Reveal cards (What We Do — Pearl pricing-card interaction) ---------- */
 .reveal-card {
   position: relative;
-  background: var(--ivory);
+  background: var(--white);
   border: 1px solid var(--line-on-light);
   border-radius: var(--radius);
   overflow: hidden;
@@ -2112,7 +2112,7 @@ body.page-fade-out { opacity: 0; }
 .accordion-item {
   border: 1px solid var(--line-on-light);
   border-radius: var(--radius);
-  background: var(--ivory);
+  background: var(--white);
   overflow: hidden;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
