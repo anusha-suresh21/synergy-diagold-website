@@ -2193,9 +2193,24 @@ body.page-fade-out { opacity: 0; }
 .doc-row:hover .doc-row-download { color: var(--indigo-light); }
 .doc-row-download svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 2; transition: transform 0.3s ease; }
 .doc-row:hover .doc-row-download svg { transform: translateY(3px); }
+.doc-row-actions { flex-shrink: 0; display: flex; align-items: center; gap: 0.5rem; }
+.doc-row-btn {
+  display: flex; align-items: center; gap: 0.4em;
+  font-size: 0.85rem; font-weight: 600; color: var(--indigo-deep);
+  border: 1px solid rgba(212,175,55,0.4);
+  border-radius: var(--radius-pill);
+  padding: 0.5em 1em;
+  white-space: nowrap;
+  transition: color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+.doc-row-btn svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 2; transition: transform 0.3s ease; }
+.doc-row-btn:hover { border-color: var(--indigo); background: var(--indigo); color: var(--white); }
+.doc-row-btn.is-download:hover svg { transform: translateY(2px); }
+.doc-row:hover .doc-row-btn { color: var(--indigo-light); border-color: rgba(249,171,56,0.5); }
+.doc-row:hover .doc-row-btn:hover { background: var(--indigo); color: var(--white); border-color: var(--indigo); }
 @media (max-width: 620px) {
   .doc-row { flex-wrap: wrap; }
-  .doc-row-download { margin-left: calc(44px + 1.2rem); }
+  .doc-row-download, .doc-row-actions { margin-left: calc(44px + 1.2rem); }
 }
 
 /* ---------- Careers: open-application banner ---------- */
