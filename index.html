@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synergy Diagold FZCO — Precious Metals Trading House, Dubai</title>
+<meta name="description" content="Synergy Diagold FZCO trades gold, silver, platinum and palladium from Dubai, where every counterparty is verified before a single gram changes hands.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/synergy-diagold-logo.png" alt="Synergy Diagold FZCO">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li class="nav-has-dropdown">
+        <button type="button" class="nav-dropdown-toggle" aria-haspopup="true">
+          More
+          <svg class="nav-caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5 11 1.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <ul class="nav-dropdown-menu">
+          <li><a href="news.html">News</a></li>
+          <li><a href="account-opening.html">Account Opening</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="nav-overlay" id="navOverlay">
+  <button class="nav-overlay-close" aria-label="Close menu">&times;</button>
+  <ul class="nav-overlay-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li class="nav-overlay-sub-label">More</li>
+    <li><a href="news.html" class="is-sub">News</a></li>
+    <li><a href="account-opening.html" class="is-sub">Account Opening</a></li>
+    <li><a href="resources.html" class="is-sub">Resources</a></li>
+    <li><a href="careers.html" class="is-sub">Careers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-overlay-contact">
+    <a href="mailto:info@synergydiagold.com">info@synergydiagold.com</a>
+    <a href="tel:+971543220789">+971 54 322 0789</a>
+  </div>
+</div>
+
+<section class="hero-slider" id="heroSlider">
+  <div class="hero-slide-bg" id="heroSlideBg" style="background-image:url('images/banner.png');"></div>
+  <div class="hero-tiles" id="heroTiles"></div>
+  <div class="container hero-inner">
+    <h1 class="hero-tagline">A precious metals trading house,<br><span class="tone-soft">built on due diligence.</span></h1>
+  </div>
+</section>
+
+<section class="section on-light">
+  <div class="container">
+    <div class="about-block">
+      <div class="about-photo">
+        <img src="images/home.jpg" alt="Gold and precious metal bars handled by Synergy Diagold FZCO">
+      </div>
+      <div>
+        <div class="eyebrow">Who We Are</div>
+        <h2>Trade with integrity, or not at all.</h2>
+        <p class="slate-text">Precious metals move fast, and they move quietly — which is exactly why the market needs counterparties who slow down long enough to ask the right questions. Synergy Diagold FZCO was built on that premise.</p>
+        <p class="slate-text">We are a Dubai-based trading house engaged in the buying, selling and cross-border movement of gold and other precious metals. Behind every transaction sits a genuine commitment to verifying who we work with, understanding where value comes from, and keeping clean records of how it moves.</p>
+        <p class="slate-text">Synergy Diagold FZCO trades gold, silver, platinum and palladium from Dubai, where every counterparty is verified before a single gram changes hands.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section on-light">
+  <div class="container">
+    <div class="section-head mx-auto text-center metals-head">
+      <h2 class="split-words">What We Trade</h2>
+      <p class="lede slate-text">Every metal we offer is refined to internationally recognised purity standards and delivered in standard bar formats suited to institutional, dealer and industrial buyers.</p>
+    </div>
+    <div class="metals-showcase metals-reveal" id="metalsPanel">
+      <button type="button" class="metal-panel is-active" data-metal="gold">
+        <img src="images/gold%20bar.jpg" alt="Gold bullion bars">
+        <span class="metal-panel-shade" aria-hidden="true"></span>
+        <span class="metal-panel-label">
+          <span class="metal-panel-name">Gold</span>
+          <span class="metal-panel-rule" aria-hidden="true"></span>
+        </span>
+      </button>
+      <button type="button" class="metal-panel" data-metal="silver">
+        <img src="images/silver%20bars.jpg" alt="Silver bullion bars">
+        <span class="metal-panel-shade" aria-hidden="true"></span>
+        <span class="metal-panel-label">
+          <span class="metal-panel-name">Silver</span>
+          <span class="metal-panel-rule" aria-hidden="true"></span>
+        </span>
+      </button>
+      <button type="button" class="metal-panel" data-metal="platinum">
+        <img src="images/platinum.jpg" alt="Platinum bullion bars">
+        <span class="metal-panel-shade" aria-hidden="true"></span>
+        <span class="metal-panel-label">
+          <span class="metal-panel-name">Platinum</span>
+          <span class="metal-panel-rule" aria-hidden="true"></span>
+        </span>
+      </button>
+    </div>
+    <div class="text-center" style="margin-top:2.6rem;">
+      <a href="products.html" class="cta-arrow">
+        <span>Know More</span>
+        <em>
+          <svg viewBox="0 0 16 17" aria-hidden="true"><path d="M13.338 5.044 1.882 16.5 0 14.618 11.455 3.162H1.359V0.5H16v14.641h-2.662V5.044Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 16 17" aria-hidden="true"><path d="M13.338 5.044 1.882 16.5 0 14.618 11.455 3.162H1.359V0.5H16v14.641h-2.662V5.044Z" fill="currentColor"/></svg>
+        </em>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section on-alt">
+  <div class="container">
+    <div class="section-head mx-auto text-center">
+      <div class="eyebrow">Our Services</div>
+      <h2 class="split-words">What we do for you.</h2>
+      <p class="lede slate-text">From straightforward bullion trades to secure delivery coordination, every service is delivered the same way — carefully, and with a proper understanding of who we're working with.</p>
+    </div>
+    <div class="teaser-grid">
+      <a href="services.html#trading" class="svc-grid-card reveal-fade d1">
+        <div class="svc-photo"><img src="images/trading-img.jpg" alt="Precious metals trading"></div>
+        <div class="svc-rule"></div>
+        <h3>Precious Metals Trading</h3>
+        <p>Straightforward, market-linked pricing for one-off transactions and ongoing trading relationships.</p>
+        <span class="svc-read-more">Read More <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="services.html#bullion-supply" class="svc-grid-card reveal-fade d2">
+        <div class="svc-photo"><img src="images/gold-bar.png" alt="Bullion supply"></div>
+        <div class="svc-rule"></div>
+        <h3>Bullion Supply</h3>
+        <p>Steady, dependable supply arrangements built around your volume and timing, not a fixed catalogue.</p>
+        <span class="svc-read-more">Read More <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="services.html#sourcing-procurement" class="svc-grid-card reveal-fade d3">
+        <div class="svc-photo"><img src="images/sourcing-img.jpg" alt="Sourcing and procurement support"></div>
+        <div class="svc-rule"></div>
+        <h3>Sourcing &amp; Procurement Support</h3>
+        <p>We find and properly check a new supplier or buyer before an introduction is made on your behalf.</p>
+        <span class="svc-read-more">Read More <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="services.html#secure-movement" class="svc-grid-card reveal-fade d4">
+        <div class="svc-photo"><img src="images/gb.jpg" alt="Secure movement and delivery coordination"></div>
+        <div class="svc-rule"></div>
+        <h3>Secure Movement &amp; Delivery Coordination</h3>
+        <p>Safe handling and delivery between parties, coordinated only with transport and storage providers we trust.</p>
+        <span class="svc-read-more">Read More <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+    <div class="text-center" style="margin-top:2.6rem;">
+      <a href="services.html" class="cta-arrow">
+        <span>View All Services</span>
+        <em>
+          <svg viewBox="0 0 16 17" aria-hidden="true"><path d="M13.338 5.044 1.882 16.5 0 14.618 11.455 3.162H1.359V0.5H16v14.641h-2.662V5.044Z" fill="currentColor"/></svg>
+          <svg viewBox="0 0 16 17" aria-hidden="true"><path d="M13.338 5.044 1.882 16.5 0 14.618 11.455 3.162H1.359V0.5H16v14.641h-2.662V5.044Z" fill="currentColor"/></svg>
+        </em>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section on-dark">
+  <div class="container">
+    <div class="section-head mx-auto text-center">
+      <div class="eyebrow">Why Synergy Diagold</div>
+      <h2 class="split-words">What sets us apart.</h2>
+      <p class="lede slate-text">Diligence-first trading, done by people who know the market and answer their own phones.</p>
+    </div>
+    <div class="teaser-grid cols-3">
+      <div class="value-card reveal-fade d1">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 3l3 6 6 1-4.5 4 1 6L12 17l-5.5 3 1-6L3 10l6-1z"/></svg>
+        </div>
+        <h3>Trusted, Hands-On Expertise</h3>
+        <p>Our leadership brings direct, practical experience in the bullion trade, not just an interest in it &mdash; deep market insight across gold, silver, platinum and palladium that shows up in how realistically we price, and how quickly we can move once terms are agreed.</p>
+      </div>
+      <div class="value-card reveal-fade d2">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><circle cx="5" cy="7" r="2"/><circle cx="19" cy="7" r="2"/><circle cx="12" cy="17" r="2"/><path d="M6.7 8.3 10.5 15.5M17.3 8.3 13.5 15.5M7 7h10"/></svg>
+        </div>
+        <h3>A Reach Built on Trusted Partners</h3>
+        <p>We work with clients across the UAE and beyond, backed by transport and storage partners we've properly vetted ourselves. And when you call, you reach a person &mdash; no call centres, no ticket queues.</p>
+      </div>
+      <div class="value-card reveal-fade d3">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>Verified Counterparties, Every Time</h3>
+        <p>We'd rather lose a fast deal than take on a counterparty we don't properly understand. That approach costs us some speed occasionally &mdash; it saves us, and our clients, far more in the long run.</p>
+      </div>
+      <div class="value-card reveal-fade d4">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M3 17l5.5-6 4 3.5L21 5"/><path d="M15 5h6v6"/></svg>
+        </div>
+        <h3>Transparent, Market-Linked Pricing</h3>
+        <p>Pricing on every trade reflects the market, not a marked-up version of it &mdash; the same straightforward structure whether it's a single transaction or an ongoing relationship.</p>
+      </div>
+      <div class="value-card reveal-fade d1">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M4 21h16M6 21V9l6-5 6 5v12M9 21v-6h6v6"/></svg>
+        </div>
+        <h3>Built for Institutional Volumes</h3>
+        <p>Supply arrangements are scaled to fit the buyer &mdash; from a single kilo bar to recurring institutional demand &mdash; built around your volume and timing rather than a fixed catalogue.</p>
+      </div>
+      <div class="value-card reveal-fade d2">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5"/><path d="M9 12h6M9 16h6"/></svg>
+        </div>
+        <h3>Documented at Every Step</h3>
+        <p>Every service we provide leaves a clear paper trail, coordinated only with logistics and storage partners we trust &mdash; useful for our clients' own record-keeping as much as for ours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section on-light closing-cta">
+  <div class="container">
+    <div class="closing-cta-grid">
+      <div class="closing-cta-copy">
+        <h2 class="split-words">Ready to secure your next bullion trade?</h2>
+        <p class="slate-text">Get in touch with Synergy Diagold FZCO for gold, silver, platinum and palladium in kilo and large bar formats &mdash; delivered with integrity, compliance and confidentiality.</p>
+      </div>
+      <div class="closing-cta-form-panel">
+        <h3>Send Message</h3>
+        <form class="closing-cta-form js-enquiry-form" id="quickEnquiryForm" novalidate>
+          <div class="closing-cta-row">
+            <input type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+            <input type="email" name="email" placeholder="Email Address" autocomplete="email" required>
+          </div>
+          <div class="closing-cta-row">
+            <input type="tel" name="phone" placeholder="Phone" autocomplete="tel" required>
+            <input type="text" name="subject" placeholder="Subject">
+          </div>
+          <textarea name="message" rows="5" placeholder="Write Your Message Here..." required></textarea>
+          <button type="submit" class="cta-arrow">
+            <span>Send Message</span>
+            <em>
+              <svg viewBox="0 0 16 17" aria-hidden="true"><path d="M13.338 5.044 1.882 16.5 0 14.618 11.455 3.162H1.359V0.5H16v14.641h-2.662V5.044Z" fill="currentColor"/></svg>
+              <svg viewBox="0 0 16 17" aria-hidden="true"><path d="M13.338 5.044 1.882 16.5 0 14.618 11.455 3.162H1.359V0.5H16v14.641h-2.662V5.044Z" fill="currentColor"/></svg>
+            </em>
+          </button>
+          <p class="closing-cta-note form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="newsletter-strip">
+    <div class="container newsletter-inner">
+      <div>
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Market updates and company news, sent occasionally &mdash; no spam.</p>
+      </div>
+      <form class="newsletter-form js-newsletter-form" novalidate>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/synergy-diagold-logo.png" alt="Synergy Diagold FZCO">
+        <p>A Dubai-based trading house for gold, silver and platinum — built around verified counterparties and responsible sourcing.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="account-opening.html">Account Opening</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.686 7-11a7 7 0 1 0-14 0c0 5.314 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span>Dubai Airport Free Zone (DAFZA)<br>Dubai, U.A.E.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg>
+            <a href="tel:+971543220789">+971 54 322 0789</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6.5 9 6 9-6"/></svg>
+            <a href="mailto:info@synergydiagold.com">info@synergydiagold.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span class="footer-copyright">&copy; 2026 Synergy Diagold FZCO. All rights reserved.</span>
+      <span class="small-caps">DAFZA &middot; Dubai &middot; U.A.E.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
