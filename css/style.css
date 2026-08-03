@@ -1257,7 +1257,7 @@ body.nav-open { overflow: hidden; }
 
 /* ---------- Oversized page-header type ---------- */
 .page-header h1 { font-size: clamp(2.6rem, 7vw, 4.6rem); font-weight: 800; }
-.page-header .first-letter, .hero-tagline .first-letter { color: var(--indigo-light); }
+.page-header .first-letter, .hero-tagline .first-letter { color: var(--grad-start); }
 .hero-tagline .tone-soft { font-weight: 400; opacity: 0.85; }
 
 /* ---------- Footer — dark, so its white/gold text reads clearly and it
