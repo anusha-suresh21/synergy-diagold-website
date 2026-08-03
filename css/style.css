@@ -645,6 +645,67 @@ p:last-child { margin-bottom: 0; }
 .contact-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3rem; }
 @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
 
+/* ---------- Contact action cards (Call / Email Us) ---------- */
+.contact-action-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem; max-width: 640px; margin: 2.8rem auto 0; }
+@media (max-width: 560px) { .contact-action-grid { grid-template-columns: 1fr; } }
+.contact-action-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5em;
+  background: var(--ivory);
+  border: 1px solid rgba(212,175,55,0.35);
+  border-radius: var(--radius);
+  padding: 2.4rem 1.8rem;
+  transition: transform 0.35s cubic-bezier(.2,.8,.2,1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.contact-action-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(11,11,12,0.16); border-color: var(--indigo); }
+.contact-action-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(212,175,55,0.16) 0%, transparent 65%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.contact-action-card:hover::before { opacity: 1; }
+.contact-action-icon {
+  position: relative;
+  width: 62px; height: 62px;
+  border-radius: 50%;
+  border: 1.5px solid var(--indigo);
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.35s ease, transform 0.4s cubic-bezier(.2,.8,.2,1);
+}
+.contact-action-icon svg { width: 26px; height: 26px; stroke: var(--indigo); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.contact-action-card:hover .contact-action-icon { background: var(--indigo); transform: scale(1.08) rotate(-6deg); }
+.contact-action-card:hover .contact-action-icon svg { stroke: var(--white); }
+.contact-action-title { position: relative; font-weight: 700; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
+.contact-action-value { position: relative; font-family: var(--font-mono); font-size: 1.05rem; color: var(--text-dark); transition: color 0.3s ease; word-break: break-word; }
+.contact-action-card:hover .contact-action-value { color: var(--indigo-deep); }
+
+/* ---------- Contact info list (address / phone / email with icons) ---------- */
+.contact-info-list { display: flex; flex-direction: column; gap: 1.4rem; margin-top: 1.8rem; }
+.contact-info-list li { display: flex; align-items: flex-start; gap: 1rem; }
+.contact-info-icon {
+  flex-shrink: 0;
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  background: rgba(212,175,55,0.12);
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.contact-info-icon svg { width: 20px; height: 20px; stroke: var(--indigo); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.contact-info-list li:hover .contact-info-icon { background: var(--indigo); transform: scale(1.08); }
+.contact-info-list li:hover .contact-info-icon svg { stroke: var(--white); }
+.contact-info-label { display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--indigo-deep); margin-bottom: 0.2em; }
+.contact-info-value { display: block; font-size: 0.98rem; color: var(--text-dark); transition: color 0.25s ease; }
+a.contact-info-value:hover { color: var(--indigo-deep); }
+
 /* ---------- Footer ---------- */
 .site-footer { background: var(--ink); color: rgba(255,255,255,0.7); padding-top: 4rem; }
 .newsletter-strip {
