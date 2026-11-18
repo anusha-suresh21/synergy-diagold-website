@@ -184,7 +184,7 @@
   var slideBg = document.getElementById('heroSlideBg');
   var tilesWrap = document.getElementById('heroTiles');
   if (slider && slideBg && tilesWrap) {
-    var heroImages = ['images/banner.png', 'images/banner-1.jpg'];
+    var heroImages = ['images/banner.png', 'images/banner-gold-coins.jpg'];
     var heroCurrent = 0;
     var cols = 8, rows = 5;
     var tiles = [];
